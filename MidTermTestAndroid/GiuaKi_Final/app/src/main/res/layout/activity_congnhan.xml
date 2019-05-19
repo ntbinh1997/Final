@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PhanXuongActivity">
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@color/lightGray">
+        <EditText
+            android:id="@+id/edt_macn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="ID" />
+        <EditText
+            android:id="@+id/edt_ho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Họ" />
+        <EditText
+            android:id="@+id/edt_ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tên" />
+        <EditText
+            android:id="@+id/edt_phai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phái" />
+        <EditText
+            android:id="@+id/edt_namsinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Năm sinh"
+            android:inputType="date"/>
+        <EditText
+            android:inputType="date"
+            android:id="@+id/edt_ngaynv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ngày nhận việc" />
+        <EditText
+            android:inputType="number"
+            android:id="@+id/edt_luongcb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Lương cơ bản" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mã phân xưởng: "
+                android:textStyle="normal"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="19dp"/>
+            <Spinner
+                android:id="@+id/spn_mapx"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <Button
+                android:background="@drawable/button_blue"
+                android:id="@+id/btn_them"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Thêm" />
+
+            <Button
+                android:background="@drawable/button_green"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/btn_capnhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:text="Cập nhật" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_congnhan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

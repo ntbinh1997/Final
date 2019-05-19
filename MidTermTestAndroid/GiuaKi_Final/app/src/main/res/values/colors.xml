@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFA000</color>
+    <color name="backgroundColor">#FCFCFC</color>
+    <color name="lightGray">#EDEDED</color>
+    <color name="deepPurple">#7C4DFF</color>
+    <color name="marterialYellow">#FFB300</color>
+    <color name="marterialGreen">#00BFA5</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="pinkAccent">#FF4081</color>
+    <color name="text">#AB8BC34A</color>
+    <color name="bluelight">#80C6FF</color>
+</resources>
